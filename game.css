@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background: #555;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 20%;
+    background: #e4e4e4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#ball {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle at 30% 30%, #ff5733, #c70039);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    animation: spin 2s linear infinite, pulse 2s infinite alternate;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* Include your existing CSS here */
+
+
+
+
+#gameArea {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: lightblue;
+    cursor: pointer;
+    transition: top 0.5s, left 0.5s; /* Smooth transition for movement */
+}
+
+#clickedLettersDisplay {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    width: 800px;
+}
+
+#GameTitle {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    width: 800px;
+}
+
+#refreshButton {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
